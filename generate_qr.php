@@ -84,12 +84,12 @@ try {
             <p><strong><?php echo htmlspecialchars(t('owner_name')); ?>：</strong><?php echo htmlspecialchars($owner_name); ?></p>
             <p><strong><?php echo htmlspecialchars(t('visitor_name')); ?>：</strong><?php echo htmlspecialchars($visitor_name); ?></p>
             <p><strong><?php echo htmlspecialchars(t('visitor_id_card')); ?>：</strong><?php echo htmlspecialchars($visitor_id_card); ?></p>
-            <p><strong><?php echo htmlspecialchars(t('visit_date')); ?>：</strong><?php echo date('Y年m月d日', strtotime($visit_date)); ?></p>
+            <p><strong><?php echo htmlspecialchars(t('visit_date')); ?>：</strong><?php echo date(t('date_format'), strtotime($visit_date)); ?></p>
         </div>
         <div class="qr-code">
             <h3><?php echo htmlspecialchars(t('qr_generated')); ?></h3>
             <?php if (file_exists($qrFile)): ?>
-                <img src="<?php echo htmlspecialchars($qrFile); ?>" alt="访客二维码">
+                <img src="<?php echo htmlspecialchars($qrFile); ?>" alt="<?php echo htmlspecialchars(t('qr_generated')); ?>">
                 <p class="hint"><?php echo htmlspecialchars(t('please_save_qr')); ?></p>
             <?php else: ?>
                 <p class="error-message"><?php echo htmlspecialchars(t('qr_failed')); ?></p>

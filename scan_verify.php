@@ -172,7 +172,7 @@ include 'lang.php';
                             </tr>
                             <tr>
                                 <td><strong><?php echo htmlspecialchars(t('visit_date')); ?>：</strong></td>
-                                <td><?php echo date('Y年m月d日', strtotime($visitor['visit_time'])); ?></td>
+                                <td><?php echo date(t('date_format'), strtotime($visitor['visit_time'])); ?></td>
                             </tr>
                         </table>
                     </div>

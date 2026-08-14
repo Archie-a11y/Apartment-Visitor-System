@@ -65,7 +65,7 @@ if (isset($_POST['visitor_id_card'])) {
                     </tr>
                     <tr>
                         <td><strong><?php echo htmlspecialchars(t('visit_date')); ?>：</strong></td>
-                        <td><?php echo date('Y年m月d日', strtotime($visitor['visit_time'])); ?></td>
+                        <td><?php echo date(t('date_format'), strtotime($visitor['visit_time'])); ?></td>
                     </tr>
                     <tr>
                         <td><strong><?php echo htmlspecialchars(t('status')); ?>：</strong></td>
@@ -91,7 +91,7 @@ if (isset($_POST['visitor_id_card'])) {
                         if (file_exists($qrFile)): ?>
                             <img src="<?php echo htmlspecialchars($qrFile); ?>" alt="<?php echo htmlspecialchars(t('qr_generated')); ?>">
                         <?php else: ?>
-                            <p class="error-message"><?php echo htmlspecialchars('QR file not found'); ?></p>
+                            <p class="error-message"><?php echo htmlspecialchars(t('qr_file_not_found')); ?></p
                         <?php endif; ?>
                     </div>
                 <?php endif; ?>

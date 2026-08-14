@@ -63,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-group">
                 <label for="real_name"><?php echo htmlspecialchars(t('real_name')); ?></label>
                 <input id="real_name" type="text" name="real_name" placeholder="<?php echo htmlspecialchars(t('real_name')); ?>" required
-                    pattern="[\u4e00-\u9fa5]{2,10}" title="<?php echo htmlspecialchars(t('real_name_pattern')); ?>">
+                pattern="[a-zA-Z\s\u4e00-\u9fa5]{2,50}" title="<?php echo htmlspecialchars(t('real_name_pattern')); ?>">
             </div>
 
             <div class="form-group">

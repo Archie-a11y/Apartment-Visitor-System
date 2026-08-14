@@ -66,9 +66,10 @@ $translations = [
     , 'qr_file_not_found' => 'QR file not found'
     , 'username_pattern' => 'Username must be 4-20 characters; letters, numbers and underscores only'
     , 'password_pattern' => 'Password must be at least 6 characters'
-    , 'real_name_pattern' => 'Please enter 2-10 Chinese characters'
+    , 'real_name_pattern' => 'Please enter a valid name (2-50 characters, letters and spaces only)'
     , 'room_number_pattern' => 'Enter room number like 1-101'
     , 'phone_pattern' => 'Enter valid Malaysian phone number e.g. 0123456789'
+    , 'date_format' => 'Y-m-d'
 ];
 
 return $translations;

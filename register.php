@@ -49,8 +49,8 @@ if (!isset($_SESSION['owner_id'])) {
 
             <div class="form-group">
                 <label for="visitor_name"><?php echo htmlspecialchars(t('visitor_name')); ?></label>
-                <input id="visitor_name" type="text" name="visitor_name" placeholder="<?php echo htmlspecialchars(t('visitor_name')); ?>" 
-                    pattern="[\u4e00-\u9fa5]{2,10}" title="请输入2-10个中文字符" required>
+                <input id="visitor_name" type="text" name="visitor_name" placeholder="<?php echo htmlspecialchars(t('visitor_name')); ?>"
+                pattern="[a-zA-Z\s\u4e00-\u9fa5]{2,50}" title="<?php echo htmlspecialchars(t('real_name_pattern')); ?>" required>
             </div>
 
             <div class="form-group">
@@ -91,7 +91,7 @@ if (!isset($_SESSION['owner_id'])) {
                     ?>
                     <tr>
                         <td><?php echo htmlspecialchars($row['visitor_name']); ?></td>
-                        <td><?php echo $visit_date->format('Y年m月d日'); ?></td>
+                        <td><?php echo $visit_date->format(t('date_format')); ?></td>
                         <td class="<?php echo ($status === t('valid')) ? 'valid' : 'expired'; ?>"><?php echo htmlspecialchars($status); ?></td>
                     </tr>
                     <?php endwhile; ?>

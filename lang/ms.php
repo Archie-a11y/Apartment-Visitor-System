@@ -66,9 +66,10 @@ $translations = [
     , 'qr_file_not_found' => 'Fail QR tidak ditemui'
     , 'username_pattern' => 'Nama pengguna mesti 4-20 aksara; huruf, nombor dan garis bawah sahaja'
     , 'password_pattern' => 'Kata laluan mesti sekurang-kurangnya 6 aksara'
-    , 'real_name_pattern' => 'Sila masukkan 2-10 aksara Cina'
+    , 'real_name_pattern' => 'Sila masukkan nama yang sah (2-50 aksara, huruf dan ruang sahaja)'
     , 'room_number_pattern' => 'Masukkan nombor bilik seperti 1-101'
     , 'phone_pattern' => 'Masukkan nombor telefon Malaysia yang sah contohnya 0123456789'
+    , 'date_format' => 'Y-m-d'
 ];
 
 return $translations;

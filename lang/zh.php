@@ -66,9 +66,10 @@ $translations = [
     , 'qr_file_not_found' => '二维码文件未找到'
     , 'username_pattern' => '用户名需要4-20个字符，只能包含字母、数字和下划线'
     , 'password_pattern' => '密码至少需要6个字符'
-    , 'real_name_pattern' => '请输入2-10个中文字符'
+    , 'real_name_pattern' => '请输入2-50位真实姓名（支持中英文、空格）'
     , 'room_number_pattern' => '请输入正确的房间号格式，如：1-101'
     , 'phone_pattern' => '请输入正确的马来西亚手机号(如0123456789)'
+    , 'date_format' => 'Y-m-d'
 ];
 
 return $translations;
