@@ -97,5 +97,3 @@ Security guards check visitors' digital or printed passes using live camera stre
    ```
    http://localhost/Apartment-Visitor-System/index.php
    ```
-git push origin main
-```
